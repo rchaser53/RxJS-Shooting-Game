@@ -1,0 +1,56 @@
+{
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --timout 5000 --recursive test/*/*.js",
+    "build": "node tasks\\build.js"
+  },
+  "devDependencies": {
+    "babel": "6.5.2",
+    "babel-core": "6.10.4",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-transform-class-properties": "6.10.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.10.3",
+    "babel-plugin-transform-runtime": "6.9.0",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.5.0",
+    "babel-preset-stage-0": "6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "chai": "^3.5.0",
+    "css-modulesify": "^0.25.1",
+    "del": "^2.2.1",
+    "gulp-webserver": "^0.9.1",
+    "immutable": "^3.8.1",
+    "jsdom": "^9.4.1",
+    "jsdomify": "^2.1.0",
+    "mocha": "^2.5.3",
+    "redux-actions": "^0.10.0",
+    "sinon": "^1.17.4",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-fs": "^2.4.3",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "babel-runtime": "6.9.2",
+    "react": "15.1.0",
+    "react-addons-test-utils": "15.1.0",
+    "react-dom": "15.1.0",
+    "react-redux": "4.4.5",
+    "redux": "3.5.2",
+    "redux-logger": "2.6.1",
+    "rxjs": "^5.0.0-beta.9"
+  },
+  "description": "rxJSPlayGround",
+  "version": "0.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "RxJS",
+    "React",
+    "Redux"
+  ],
+  "author": "rChaser53",
+  "license": "MIT"
+}

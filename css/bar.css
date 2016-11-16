@@ -1,0 +1,20 @@
+.barOuter{
+	width:20px;
+	height:100px;
+	display:block;
+	position:relative;
+	border:solid 1px black;
+	margin-top:10px;
+}
+
+.bar{
+	display:block;
+	position:absolute;
+	background-color:aqua;
+}
+
+.shot{
+	display:block;
+	position:absolute;
+	background-color:green;
+}

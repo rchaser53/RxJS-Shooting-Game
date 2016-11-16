@@ -1,0 +1,41 @@
+.barArea{
+	display:flex;
+	justify-content:space-between;
+	position:relative;
+	border:solid 1px black;
+}
+
+.clickArea{
+	width:100%;
+	height:10px;
+	display:block;
+	background-color:purple;
+	position:absolute;
+	top:100px;
+}
+
+.actor{
+	display:block;
+	position:absolute;
+	bottom:0%;
+}
+
+.messeageArea{
+	padding-left:10px;
+	font-size:18px;
+	font-weight:bold;
+	color:red;
+	display:block;
+	width:150px;
+	height:20px;
+}
+
+.gameClear{
+	padding-left:10px;
+	font-size:18px;
+	font-weight:bold;
+	color:green;
+	display:block;
+	width:150px;
+	height:20px;
+}

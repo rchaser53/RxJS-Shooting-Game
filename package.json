@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "mocha --compilers js:babel-register --timout 5000 --recursive test/*/*.js",
-    "build": "node tasks\\build.js"
+    "build": "node tasks/build.js"
   },
   "devDependencies": {
     "babel": "6.5.2",

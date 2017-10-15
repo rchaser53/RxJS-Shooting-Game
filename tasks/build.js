@@ -5,6 +5,7 @@ const watchify = require("watchify");
 const cssModulesify = require('css-modulesify');
 const babelify = require('babelify');
 const fs = require("fs");
+const mkdirp = require('mkdirp');
 
 const bundler = browserify({
                     entries: ["src/index.jsx"],
@@ -34,11 +35,14 @@ const rebundle = ()=>{
         .pipe(fs.createWriteStream('dist/app.js'));
 };
 
-bundler.on("update", rebundle);
-rebundle();
-
-vfs.src("./")
-    .pipe(webserver({
-        port: 3000,
-        livereload: true
-    }));
+mkdirp('dist', function (err) {
+    if (err) throw new Error(err)
+    bundler.on("update", rebundle);
+    rebundle();
+    
+    vfs.src("./")
+        .pipe(webserver({
+            port: 3000,
+            livereload: true
+        }));
+});

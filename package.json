@@ -22,6 +22,7 @@
     "immutable": "^3.8.1",
     "jsdom": "^9.4.1",
     "jsdomify": "^2.1.0",
+    "mkdirp": "^0.5.1",
     "mocha": "^2.5.3",
     "redux-actions": "^0.10.0",
     "sinon": "^1.17.4",
